@@ -12,10 +12,15 @@ Emacs and Cider installed
 ```bash
 $ boot2docker up
 $ eval "$(boot2docker shellinit)"
-$ docker-composer up
+
+# If dependencies in project.clj changed
+$ docker-compose build
+
+$ docker-compose up
 ```
 
 Emacs
+
 M-x cider-connect
 
 ## License
